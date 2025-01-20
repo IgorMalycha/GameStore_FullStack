@@ -1,0 +1,176 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #14213d;
+    color: #E5E5E5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E5E5E5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-links {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+.navbar-link {
+    font-size: 1.2rem;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar-link a {
+    color: #E5E5E5;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: #090d1b;
+    color: #FCA311;
+}
+
+.navbar-link a:hover {
+    color: #FCA311;
+}
+
+.navbar-user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #E5E5E5;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.user-info span {
+    font-size: 1.5rem;
+}
+
+.user-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.user-actions button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #FCA311;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-actions button:hover {
+    background-color: #d99009;
+    color: #000000;
+}
+
+.user-actions .logout-link {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #FCA311;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-actions .logout-link:hover {
+    background-color: #d99009;
+    color: #000000;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #14213d;
+    width: 40%;
+    height: auto;
+    min-width: 400px;
+    min-height: 300px;
+    padding: 28px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    z-index: 1000;
+    color: #E5E5E5;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.popup-content h3 {
+    font-size: 1.2rem;
+}
+
+.popup-content input {
+    padding: 10px;
+    border: 1px solid #FCA311;
+    border-radius: 6px;
+    background-color: #10192e;
+    color: #E5E5E5;
+    font-size: 0.8rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.popup-content input:focus {
+    border-color: #FCA311;
+}
+
+.popup-content button {
+    padding: 10px 14px;
+    margin-top: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #FCA311;
+    color: #000000;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.popup-content button:hover {
+    background-color: #d99009;
+    color: #000000;
+}
+
+.popup-content label {
+    color: #E5E5E5;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
